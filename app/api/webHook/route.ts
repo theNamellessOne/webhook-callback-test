@@ -4,7 +4,7 @@ type ResponseData = {
   message: string;
 };
 
-function handler(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
+function handler(req: any, res: any) {
   console.log(req.body);
   return Response.json({ msg: "suka" });
 }
