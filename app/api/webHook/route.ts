@@ -5,8 +5,8 @@ type ResponseData = {
 };
 
 function handler(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
-  console.log(req.body);
-  return Response.json({ msg: "suka" });
+  console.log(req)
+  return Response.json("suka");
 }
 
 export const GET = handler;
