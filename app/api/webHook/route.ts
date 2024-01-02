@@ -4,8 +4,8 @@ type ResponseData = {
   message: string;
 };
 
-function handler(req: any, res: any) {
-  console.log(req.body);
+async function handler(req: any, res: any) {
+  console.log(await req.json());
   return Response.json({ msg: "suka" });
 }
 
